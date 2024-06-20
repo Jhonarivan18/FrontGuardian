@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import  {AdminScreenInformes}  from '../views/admin/Informes/PantallaInformes'; 
+import  AdminScreenInformes  from '../views/admin/Informes/PantallaInformes'; 
 import { ProfileInfoScreen } from '../views/profile/info/ProfileInfo';
 import { AdminScreenRegistroDispositivos } from '../views/admin/Dispositivos/RegistroDispositivos';
 import { AdminScreenTablas } from '../views/admin/Tablas/tabla/Tablas';
