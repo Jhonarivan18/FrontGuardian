@@ -3,7 +3,7 @@ import { LocalStorage } from "../../local/LocalStorage";
 import { User } from "../../../../Domain/entities/User";
 
 const ApiGuardian = axios.create({
-    baseURL: 'http://192.168.1.47:3000/api',
+    baseURL: 'http://192.168.1.5:3000/api',
     headers: {
         'content-type': 'application/json'
     }
