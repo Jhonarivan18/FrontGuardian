@@ -16,8 +16,8 @@ export const GuardaTabsNavigator = () => {
       name="GuardaScreenRegistroDispositivos" 
       component={GuardaScreenRegistroDispositivos}
       options={{
-        title: "Registros",
-        tabBarLabel: 'Registros',
+        title: "DATOS DE REGISTRO",
+        tabBarLabel: 'Nuevo Registro',
         tabBarIcon:({color}) => (
           <Image
             source={require('../../../assets/registro.png')}
@@ -47,11 +47,11 @@ export const GuardaTabsNavigator = () => {
       name="GuardaTablas" 
       component={GuardaScreenTablas}
       options={{
-        title: "Tabla de Registros",
-        tabBarLabel: 'Tablas',
+        title: "REGISTROS",
+        tabBarLabel: 'Registros',
         tabBarIcon:({color}) => (
           <Image
-            source={require('../../../assets/buscar.png')}
+            source={require('../../../assets/tablas.png')}
             style= {{width: 25, height: 25}}
             />
         )
@@ -62,8 +62,8 @@ export const GuardaTabsNavigator = () => {
       name="ProfileInfoScreen" 
       component={ProfileInfoScreen}
       options={{
-        title: "Perfil",
-        tabBarLabel: 'Perfil',
+        title: "USUARIO",
+        tabBarLabel:'USUARIO',
         headerShown: false,
         tabBarIcon:({color}) => (
           <Image

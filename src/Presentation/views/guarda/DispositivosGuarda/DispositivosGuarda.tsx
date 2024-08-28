@@ -16,6 +16,8 @@ import Styles from './Styles';
 import { CustomTextInput } from '../../../components/CustomTextInput';
 import useViewModel from './ViewModel'
 import { RoundedButton } from '../../../components/RoundedButton';
+import DropDownComponent from '../../../components/DropDown';
+import { tiposDocumento } from '../../../components/data';
 
 export const GuardaScreenRegistroDispositivos = () => {
 
@@ -35,10 +37,11 @@ export const GuardaScreenRegistroDispositivos = () => {
   
 
   return (
-    <ScrollView>
+    <ScrollView> 
     <View style={Styles.form}>
+    <Text style={{fontWeight: 'bold', fontSize: 18, marginTop: 20, textAlign: 'center'}}>DATOS DEL PROPIETARIO</Text>
       <CustomTextInput
-            placeholder='Nombre'
+            placeholder='Nombres'
             image={require('../../../../../assets/usuario.png')}
             keyboardType='default'
             property='name'
@@ -46,7 +49,7 @@ export const GuardaScreenRegistroDispositivos = () => {
             onChangeText={onChange}
           />
           <CustomTextInput
-            placeholder='Apellido'
+            placeholder='Apellidos'
             image={require('../../../../../assets/usuario.png')}
             keyboardType='default'
             property='lastname'
@@ -61,14 +64,14 @@ export const GuardaScreenRegistroDispositivos = () => {
             value={telefono}
             onChangeText={onChange}
           />
-          <CustomTextInput
-            placeholder='Tipo de Documento'
-            image={require('../../../../../assets/documento.png')}
-            keyboardType='default'
-            property='tipoDocumento'
-            value={tipoDocumento}
-            onChangeText={onChange}
-          />
+          <DropDownComponent
+              image={require('../../../../../assets/documento.png')}
+              label="Tipo de documento"
+              items={tiposDocumento}
+              value={tipoDocumento}
+              onValueChange={(value) => onChange('tipoDocumento', value)}
+      
+            /> 
           <CustomTextInput
             placeholder='Número Documento'
             image={require('../../../../../assets/documento.png')}
@@ -77,6 +80,13 @@ export const GuardaScreenRegistroDispositivos = () => {
             value={documento}
             onChangeText={onChange}
           />
+          <Text style={{
+            fontSize: 18,
+            fontWeight: 'bold',
+            marginTop: 35,
+            textAlign: 'center'
+            }}>DATOS DEL DISPOSITIVO</Text>
+            
           <CustomTextInput
             placeholder='Tipo de Dispositivo'
             image={require('../../../../../assets/dispositivos.png')}
@@ -119,7 +129,7 @@ export const GuardaScreenRegistroDispositivos = () => {
           />
           <View style={Styles.buttonContainer}>
           <RoundedButton
-              text='Registrar Dispositivo'
+              text='GUARDAR REGISTRO'
               onPress={() => CreateRegistro()}
               />
           </View>

@@ -1,4 +1,4 @@
-export interface Registro {
+ export interface Registro {
     id?:           string;
     name:          string;
     lastname:      string;

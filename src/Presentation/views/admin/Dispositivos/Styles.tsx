@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 const AdminRegistroStyles = StyleSheet.create({
     form:{
         paddingHorizontal: 30
+        
     },
     buttonContainer:{
         padding: 40

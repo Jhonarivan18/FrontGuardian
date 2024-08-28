@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import  AdminScreenInformes  from '../views/admin/Informes/PantallaInformes'; 
+import { AdminScreenInformes } from '../views/admin/Informes/PantallaInformes'; 
 import { ProfileInfoScreen } from '../views/profile/info/ProfileInfo';
 import { AdminScreenRegistroDispositivos } from '../views/admin/Dispositivos/RegistroDispositivos';
 import { AdminScreenTablas } from '../views/admin/Tablas/tabla/Tablas';
@@ -13,10 +13,10 @@ export const AdminTabsNavigator = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen 
-      name="AdminScreenInformes" 
+      name="AdminScreenInformes"
       component={AdminScreenInformes}
       options={{
-        title: "Informes",
+        title: "INFORMES",
         tabBarLabel: 'Informes',
         tabBarIcon:({color}) => (
           <Image
@@ -31,8 +31,8 @@ export const AdminTabsNavigator = () => {
       name="RegistroDispositivos" 
       component={AdminScreenRegistroDispositivos} 
       options={{
-        title: "Registros Dispositivos",
-        tabBarLabel: 'Registros',
+        title: "NUEVO REGISTRO",
+        tabBarLabel: 'Nuevo Registro',
         tabBarIcon:({color}) => (
           <Image
             source={require('../../../assets/registro.png')}
@@ -46,8 +46,8 @@ export const AdminTabsNavigator = () => {
       name="AdminScreenTablas" 
       component={AdminScreenTablas} 
       options={{
-        title: "Tabla de Registros",
-        tabBarLabel: 'Tablas',
+        title: "DATOS DE REGISTRO",
+        tabBarLabel: 'Registros',
         tabBarIcon:({color}) => (
           <Image
             source={require('../../../assets/tablas.png')}
@@ -62,8 +62,8 @@ export const AdminTabsNavigator = () => {
       name="ProfileInfoScreen" 
       component={ProfileInfoScreen}
       options={{
-        title: "Perfil",
-        tabBarLabel: 'Perfil',
+        title: "USUARIO",
+        tabBarLabel: 'Usuario',
         headerShown: false,
         tabBarIcon:({color}) => (
           <Image

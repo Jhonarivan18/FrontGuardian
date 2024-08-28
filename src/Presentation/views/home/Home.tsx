@@ -6,6 +6,7 @@ import { RootStackParamList } from '../../../../App';
 import useViewModel from './ViewModel';
 import { CustomTextInput } from '../../components/CustomTextInput';
 import styles from './Styles';
+import DropDown from '../../components/DropDown';
 
 
 interface Props extends StackScreenProps<RootStackParamList, 'HomeScreen'>{};
@@ -38,11 +39,11 @@ return (
     //COLUMN
     <View style={styles.container}>
         <View style={styles.logoContainer}>
+        <Text style={styles.logoText}>GUARDIÁN</Text>
         <Image source={require('../../../../assets/logoGuardian.png')} style={styles.logoImage}/>
-        <Text style={styles.logoText}>GUARDIAN</Text>
         </View>      
         <View style={styles.form}>
-        <Text style={styles.formText}>INGRESAR</Text>
+        <Text style={styles.formText}>INICIAR SESIÓN</Text>
 
 
         <CustomTextInput
@@ -77,7 +78,7 @@ return (
             <View style={styles.formRegister}>
             <Text>No tienes cuenta aún?</Text>
             <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')}>
-            <Text style={styles.formRegisterText}>REGISTRATE</Text>
+            <Text style={styles.formRegisterText}>REGÍSTRATE</Text>
             </TouchableOpacity>
             </View>
 

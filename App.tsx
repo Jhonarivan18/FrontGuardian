@@ -47,7 +47,7 @@ const App = () => {
           component={RolesScreen} 
           options={{
             headerShown: true,
-            title: 'Selecciona un rol'}}/>
+            title: 'SELECCIONA UN ROL'}}/>
 
         <Stack.Screen
           name="AdminTabsNavigator"
@@ -62,14 +62,14 @@ const App = () => {
           component={ProfileUpdateScreen}
           options={{
             headerShown: true,
-            title: 'Actualizar Usuario'}}/>
+            title: 'ACTUALIZAR USUARIO'}}/>
 
         <Stack.Screen
           name="TablaUpdateScreen"
           component={TablaUpdateScreen}
           options={{
             headerShown: true,
-            title: 'Actualizar Dispositivo'}}/>
+            title: 'ACTUALIZAR REGISTRO'}}/>
             
       </Stack.Navigator>
       </UserState>

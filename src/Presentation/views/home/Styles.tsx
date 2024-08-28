@@ -59,13 +59,15 @@ const Homestyles = StyleSheet.create({
         top: '10%'   
     },
     logoImage: {
+        marginTop: 50,
         width: 115,
         height: 150,
+        alignSelf: 'center'
     },
     logoText:{
         color: 'black',
         textAlign: 'center',
-        fontSize: 20,
+        fontSize: 35,
         fontWeight: 'bold',
         marginTop: 0
     },
